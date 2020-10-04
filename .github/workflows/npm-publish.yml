@@ -45,6 +45,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm install
       - run: npx tsc index.ts
+      - run: npm install -g json
+      - run: json -I -f package.json -e 'this.name="@vip-git/context-api-dev-tools-extension"'
       - run: npm publish --registry=https://npm.pkg.github.com --scope=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
