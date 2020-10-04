@@ -4,7 +4,8 @@
   "description": "Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/remote-redux-devtools) now using Context API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc index.ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,13 @@
   "homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
   "devDependencies": {
     "typescript": "4.0.3"
+  },
+  "dependencies": {
+    "@types/jest": "26.0.14",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-typescript": "7.10.4",
+    "babel-jest": "26.3.0",
+    "jest": "26.4.2"
   }
 }

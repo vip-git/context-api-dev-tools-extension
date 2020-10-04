@@ -4,7 +4,7 @@ let isInitialized = false;
 let firstRender = false;
 let oldArgs = {};
 
-export const useContextDevTools = (dispatch: Function) => {
+const useContextDevTools = (dispatch: Function) => {
 	if (!isInitialized) {
 		devTools.current = (window as any).__REDUX_DEVTOOLS_EXTENSION__.connect();
 		isInitialized = true;
@@ -36,3 +36,5 @@ export const useContextDevTools = (dispatch: Function) => {
 		disconnectDevTools,
 	};
 };
+
+export default useContextDevTools; 
