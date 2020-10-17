@@ -1,37 +1,37 @@
 {
-  "name": "context-api-dev-tools-extension",
-  "version": "1.0.5",
-  "description": "Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/remote-redux-devtools) now using Context API",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc index.ts",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vip-git/context-api-dev-tools-extension.git"
-  },
-  "keywords": [
-    "redux",
-    "devtools",
-    "contextAPI",
-    "extension"
-  ],
-  "author": "Vipin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vip-git/context-api-dev-tools-extension/issues"
-  },
-  "homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
-  "devDependencies": {
-    "typescript": "4.0.3"
-  },
-  "dependencies": {
-    "@types/jest": "26.0.14",
-    "@babel/core": "7.11.6",
-    "@babel/preset-env": "7.11.5",
-    "@babel/preset-typescript": "7.10.4",
-    "babel-jest": "26.5.2",
-    "jest": "26.5.3"
-  }
+	"name": "context-api-dev-tools-extension",
+	"version": "1.0.5",
+	"description": "Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/remote-redux-devtools) now using Context API",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc index.ts",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vip-git/context-api-dev-tools-extension.git"
+	},
+	"keywords": [
+		"redux",
+		"devtools",
+		"contextAPI",
+		"extension"
+	],
+	"author": "Vipin",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/vip-git/context-api-dev-tools-extension/issues"
+	},
+	"homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
+	"devDependencies": {
+		"typescript": "4.0.3"
+	},
+	"dependencies": {
+		"@types/jest": "26.0.14",
+		"@babel/core": "7.11.6",
+		"@babel/preset-env": "7.11.5",
+		"@babel/preset-typescript": "7.10.4",
+		"babel-jest": "26.5.2",
+		"jest": "26.5.3"
+	}
 }
