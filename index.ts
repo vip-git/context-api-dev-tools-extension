@@ -22,26 +22,28 @@ const useContextDevTools = (dispatch: Function) => {
 			// other options like actionSanitizer, stateSanitizer
 		});
 		isInitialized = true;
-		devTools.current.subscribe((message: any) => {
-			if (message.payload && (message.payload.type === 'JUMP_TO_STATE' || message.payload.type === 'JUMP_TO_ACTION') && message.state) {
-				const parsedState = JSON.parse(message.state);
-				sendDispatch({
-					type: 'IMPORT_STATE',
-					state: parsedState,
-				});
-			} else if (message.type === 'DISPATCH' && message.payload && message.payload.nextLiftedState) {
-				message.payload.nextLiftedState.computedStates.forEach((cs: { state: any}, csi: number) => {
-					const actionToSend = message.payload.nextLiftedState.actionsById[csi];
-					if (actionToSend.action.type !== '@@INIT') {
-						sendDispatch(actionToSend.action);
-					}
-				});
-			}
-		});
-		window.addEventListener('beforeunload', function (e) {
-			e.preventDefault();
-			disconnectDevTools();
-		});
+		if (typeof devTools.current.subscribe === 'function') {
+			devTools.current.subscribe((message: any) => {
+				if (message.payload && (message.payload.type === 'JUMP_TO_STATE' || message.payload.type === 'JUMP_TO_ACTION') && message.state) {
+					const parsedState = JSON.parse(message.state);
+					sendDispatch({
+						type: 'IMPORT_STATE',
+						state: parsedState,
+					});
+				} else if (message.type === 'DISPATCH' && message.payload && message.payload.nextLiftedState) {
+					message.payload.nextLiftedState.computedStates.forEach((cs: { state: any}, csi: number) => {
+						const actionToSend = message.payload.nextLiftedState.actionsById[csi];
+						if (actionToSend.action.type !== '@@INIT') {
+							sendDispatch(actionToSend.action);
+						}
+					});
+				}
+			});
+			window.addEventListener('beforeunload', function (e) {
+				e.preventDefault();
+				disconnectDevTools();
+			});
+		}
 	}
 
 	const sendDispatch = (args: any) => {
