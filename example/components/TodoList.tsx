@@ -6,7 +6,7 @@ function TodoList() {
   const todos = useTodosState();
   return (
     <ul>
-      {todos.map(todo => (
+      {todos?.root?.map(todo => (
         <TodoItem todo={todo} key={todo.id} />
       ))}
     </ul>

@@ -4,11 +4,27 @@ import TodoList from './components/TodoList';
 import { TodosContextProvider } from './contexts/TodosContext';
 
 const App = () => {
+   const mainStyle: React.CSSProperties = {
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		flexDirection: 'column',
+		alignSelf: 'center',
+		height: '100vh',
+	};
+
+   const imgStyle: React.CSSProperties = {
+	   maxHeight: 200,
+   };
+	
   return (
-			<TodosContextProvider>
+		<TodosContextProvider>
+			<div id={'main'} style={mainStyle}>
+				<img src={require('./logo.svg')} alt={'react-logo'} style={imgStyle} />
 				<TodoForm />
 				<TodoList />
-			</TodosContextProvider>
+			</div>
+		</TodosContextProvider>
 	);
 };
 

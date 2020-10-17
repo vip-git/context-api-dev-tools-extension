@@ -5,3 +5,6 @@ example/
 config/
 scripts/
 build/
+index.js
+index.ts
+index.d.ts

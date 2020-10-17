@@ -4,3 +4,4 @@ index.d.ts
 coverage/
 todo
 build/
+index.min.js
