@@ -1,6 +1,7 @@
 node_modules/
-index.js
-index.d.ts
 coverage/
 public/
-src/
+example/
+config/
+scripts/
+build/

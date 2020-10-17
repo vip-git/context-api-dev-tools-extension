@@ -4,7 +4,7 @@
 	"description": "Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/remote-redux-devtools) now using Context API",
 	"main": "index.js",
 	"scripts": {
-		"build": "tsc index.ts",
+		"build": "tsc --declaration index.ts",
 		"test": "jest",
 		"start:demo": "node scripts/start.js",
 		"build:demo": "node scripts/build.js",
