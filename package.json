@@ -7,8 +7,9 @@
 		"minify": "npx google-closure-compiler --js=index.js --js_output_file=index.min.js",
 		"build": "tsc --declaration index.ts && npm run minify",
 		"test": "jest",
-		"start:demo": "node scripts/start.js",
-		"build:demo": "node scripts/build.js",
+		"start:demo": "PUBLIC_URL='/' node scripts/start.js",
+		"build:demo": "PUBLIC_URL='/' node scripts/build.js",
+		"build:demo:ci": "PUBLIC_URL='/context-api-dev-tools-extension/' node scripts/build.js",
 		"test:demo": "node scripts/test.js"
 	},
 	"repository": {
