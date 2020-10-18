@@ -8,3 +8,10 @@ build/
 index.js
 index.ts
 index.d.ts
+.github/
+example-package.json
+package-lock.json
+mocks.json
+renovate.json
+tsconfig.json
+README.md
