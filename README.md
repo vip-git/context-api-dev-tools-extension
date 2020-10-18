@@ -1,7 +1,7 @@
 # Remote Context API - DevTools Extension
 [![Build](https://img.shields.io/github/workflow/status/vip-git/context-api-dev-tools-extension/Build-Test-Deploy/main?style=flat)](https://github.com/vip-git/context-api-dev-tools-extension/actions) [![npm version](https://badge.fury.io/js/context-api-dev-tools-extension.svg)](https://badge.fury.io/js/context-api-dev-tools-extension) [![codecov](https://codecov.io/gh/vip-git/context-api-dev-tools-extension/branch/main/graph/badge.svg?token=YLEDGQOZTH)](https://codecov.io/gh/vip-git/context-api-dev-tools-extension) [![Known Vulnerabilities](https://snyk.io/test/github/badges/shields/badge.svg)](https://snyk.io/test/github/vip-git/context-api-dev-tools-extension?targetFile=package.json)
 
-Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/redux-devtools-extension) now using Context API
+Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/redux-devtools-extension) now using [Context API](https://reactjs.org/docs/context.html)
 
 ```
 npm install --save-dev-exact context-api-dev-tools-extension
