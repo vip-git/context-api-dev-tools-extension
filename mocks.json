@@ -1,0 +1,598 @@
+{
+	"actionsById": {
+		"0": {
+			"action": { "type": "@@INIT" },
+			"timestamp": 1602946057723,
+			"type": "PERFORM_ACTION"
+		},
+		"1": {
+			"action": { "type": "REMOVE", "id": 3 },
+			"timestamp": 1602946059192,
+			"type": "PERFORM_ACTION"
+		},
+		"2": {
+			"action": { "type": "CREATE", "text": "hello there" },
+			"timestamp": 1602946312706,
+			"type": "PERFORM_ACTION"
+		},
+		"3": {
+			"action": { "type": "REMOVE", "id": 2 },
+			"timestamp": 1602946319891,
+			"type": "PERFORM_ACTION"
+		},
+		"4": {
+			"action": { "type": "REMOVE", "id": 1 },
+			"timestamp": 1602946320457,
+			"type": "PERFORM_ACTION"
+		},
+		"5": {
+			"action": { "type": "CREATE", "text": "npw" },
+			"timestamp": 1602946323025,
+			"type": "PERFORM_ACTION"
+		},
+		"6": {
+			"action": { "type": "REMOVE", "id": 3 },
+			"timestamp": 1602946329909,
+			"type": "PERFORM_ACTION"
+		},
+		"7": {
+			"action": { "type": "CREATE", "text": "now" },
+			"timestamp": 1602946336740,
+			"type": "PERFORM_ACTION"
+		},
+		"8": {
+			"action": { "type": "CREATE", "text": "how are you" },
+			"timestamp": 1602946340980,
+			"type": "PERFORM_ACTION"
+		},
+		"9": {
+			"action": { "type": "REMOVE", "id": 5 },
+			"timestamp": 1602946369664,
+			"type": "PERFORM_ACTION"
+		},
+		"10": {
+			"action": { "type": "REMOVE", "id": 6 },
+			"timestamp": 1602946371491,
+			"type": "PERFORM_ACTION"
+		},
+		"11": {
+			"action": { "type": "REMOVE", "id": 4 },
+			"timestamp": 1602946372265,
+			"type": "PERFORM_ACTION"
+		},
+		"12": {
+			"action": { "type": "CREATE", "text": "" },
+			"timestamp": 1602946374416,
+			"type": "PERFORM_ACTION"
+		},
+		"13": {
+			"action": { "type": "CREATE", "text": "hello" },
+			"timestamp": 1602946378073,
+			"type": "PERFORM_ACTION"
+		},
+		"14": {
+			"action": { "type": "CREATE", "text": "now" },
+			"timestamp": 1602946381347,
+			"type": "PERFORM_ACTION"
+		},
+		"15": {
+			"action": { "type": "CREATE", "text": "asdasd" },
+			"timestamp": 1602946382764,
+			"type": "PERFORM_ACTION"
+		},
+		"16": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946383194,
+			"type": "PERFORM_ACTION"
+		},
+		"17": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946383544,
+			"type": "PERFORM_ACTION"
+		},
+		"18": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946383857,
+			"type": "PERFORM_ACTION"
+		},
+		"19": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946384172,
+			"type": "PERFORM_ACTION"
+		},
+		"20": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946384480,
+			"type": "PERFORM_ACTION"
+		},
+		"21": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946384779,
+			"type": "PERFORM_ACTION"
+		},
+		"22": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946385076,
+			"type": "PERFORM_ACTION"
+		},
+		"23": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946385390,
+			"type": "PERFORM_ACTION"
+		},
+		"24": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946385693,
+			"type": "PERFORM_ACTION"
+		},
+		"25": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946385997,
+			"type": "PERFORM_ACTION"
+		},
+		"26": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946386310,
+			"type": "PERFORM_ACTION"
+		},
+		"27": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946386698,
+			"type": "PERFORM_ACTION"
+		},
+		"28": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946387034,
+			"type": "PERFORM_ACTION"
+		},
+		"29": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946387313,
+			"type": "PERFORM_ACTION"
+		},
+		"30": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946387588,
+			"type": "PERFORM_ACTION"
+		},
+		"31": {
+			"action": { "type": "CREATE", "text": "asd" },
+			"timestamp": 1602946387955,
+			"type": "PERFORM_ACTION"
+		}
+	},
+	"computedStates": [
+		{
+			"state": [
+				{ "id": 1, "text": "Learn Context API", "done": true },
+				{ "id": 2, "text": "Learn TypeScript", "done": true },
+				{ "id": 3, "text": "Use Context API with TypeScript", "done": false }
+			]
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 1, "text": "Learn Context API", "done": true },
+					{ "id": 2, "text": "Learn TypeScript", "done": true }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 1, "text": "Learn Context API", "done": true },
+					{ "id": 2, "text": "Learn TypeScript", "done": true },
+					{ "id": 3, "text": "hello there", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 1, "text": "Learn Context API", "done": true },
+					{ "id": 3, "text": "hello there", "done": false }
+				]
+			}
+		},
+		{
+			"state": { "root": [{ "id": 3, "text": "hello there", "done": false }] }
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 3, "text": "hello there", "done": false },
+					{ "id": 4, "text": "npw", "done": false }
+				]
+			}
+		},
+		{ "state": { "root": [{ "id": 4, "text": "npw", "done": false }] } },
+		{
+			"state": {
+				"root": [
+					{ "id": 4, "text": "npw", "done": false },
+					{ "id": 5, "text": "now", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 4, "text": "npw", "done": false },
+					{ "id": 5, "text": "now", "done": false },
+					{ "id": 6, "text": "how are you", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": 4, "text": "npw", "done": false },
+					{ "id": 6, "text": "how are you", "done": false }
+				]
+			}
+		},
+		{ "state": { "root": [{ "id": 4, "text": "npw", "done": false }] } },
+		{ "state": { "root": [] } },
+		{ "state": { "root": [{ "id": null, "text": "", "done": false }] } },
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		},
+		{
+			"state": {
+				"root": [
+					{ "id": null, "text": "", "done": false },
+					{ "id": null, "text": "hello", "done": false },
+					{ "id": null, "text": "now", "done": false },
+					{ "id": null, "text": "asdasd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false },
+					{ "id": null, "text": "asd", "done": false }
+				]
+			}
+		}
+	],
+	"currentStateIndex": 31,
+	"nextActionId": 32,
+	"skippedActionIds": [],
+	"stagedActionIds": [
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
+		17,
+		18,
+		19,
+		20,
+		21,
+		22,
+		23,
+		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31
+	]
+}

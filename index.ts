@@ -1,11 +1,38 @@
-// Context API Dev Tools
-const devTools: any = { send: () => {} };
-let isInitialized = false;
+// Context API Dev Toolsx
+const devTools: any = { isInitialized: false };
 let firstRender = false;
 let oldArgs: any = {};
 
 const useContextDevTools = (dispatch: Function) => {
-	if (!isInitialized && (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
+	
+	const sendDispatch = (args: any) => {
+		if(dispatch) {
+			dispatch(args);
+		}
+		oldArgs = args; 
+	};
+
+	const sendUpdatedState = (updatedState: any) => {
+		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__) {
+			if (!firstRender) {
+				devTools.current.init(updatedState);
+				firstRender = true;
+			} else {
+				if (oldArgs.type !== 'IMPORT_STATE') {
+					devTools.current.send(oldArgs, updatedState);
+				}
+			}
+		}
+	};
+
+	const disconnectDevTools = () => {
+		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__) {
+			devTools.isInitialized = false;
+			return typeof devTools.current.disconnect === 'function' && devTools.current.disconnect();
+		}
+	}
+
+	if (!devTools.isInitialized && (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
 		devTools.current = (window as any).__REDUX_DEVTOOLS_EXTENSION__.connect({
 			features: {
 				pause: true, // start/pause recording of dispatched actions
@@ -21,7 +48,7 @@ const useContextDevTools = (dispatch: Function) => {
 			},
 			// other options like actionSanitizer, stateSanitizer
 		});
-		isInitialized = true;
+		devTools.isInitialized = true;
 		if (typeof devTools.current.subscribe === 'function') {
 			devTools.current.subscribe((message: any) => {
 				if (message.payload && (message.payload.type === 'JUMP_TO_STATE' || message.payload.type === 'JUMP_TO_ACTION') && message.state) {
@@ -43,32 +70,6 @@ const useContextDevTools = (dispatch: Function) => {
 				e.preventDefault();
 				disconnectDevTools();
 			});
-		}
-	}
-
-	const sendDispatch = (args: any) => {
-		if(dispatch) {
-			dispatch(args);
-		}
-		oldArgs = args; 
-	};
-
-	const sendUpdatedState = (updatedState: any) => {
-		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__){
-			if (!firstRender) {
-				devTools.current.init(updatedState);
-				firstRender = true;
-			} else {
-				if (oldArgs.type !== 'IMPORT_STATE') {
-					devTools.current.send(oldArgs, updatedState);
-				}
-			}
-		}
-	};
-
-	const disconnectDevTools = () => {
-		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__){
-			return typeof devTools?.current?.disconnect === 'function' && devTools?.current?.disconnect();
 		}
 	}
 
