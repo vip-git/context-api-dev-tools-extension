@@ -31,22 +31,20 @@
 		"@babel/core": "7.11.6",
 		"@babel/preset-env": "7.11.5",
 		"@babel/preset-typescript": "7.10.4",
-		"babel-jest": "26.5.2"
-	},
-	"dependencies": {
+		"babel-jest": "26.5.2",
 		"google-closure-compiler": "20201006.0.0"
-    },
-    "jest": {
+	},
+	"jest": {
 		"roots": [
 			"<rootDir>/"
 		],
 		"collectCoverageFrom": [
 			"index.{js,jsx,ts,tsx}",
 			"!**/*.d.ts"
-        ],
-        "testMatch": [
+		],
+		"testMatch": [
 			"<rootDir>/**/__tests__/**/*.{js,jsx,ts,tsx}",
 			"<rootDir>/**/*.{spec,test}.{js,jsx,ts,tsx}"
 		]
-    }
+	}
 }
