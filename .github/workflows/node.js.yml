@@ -31,6 +31,7 @@ jobs:
     - run: rm -rf package.json package-lock.json
     - run: mv example-package.json package.json
     - run: npm install
+    - run: npm install --save @babel/preset-typescript
     - run: npm run build
     - run: npm run build:demo:ci
       env:
