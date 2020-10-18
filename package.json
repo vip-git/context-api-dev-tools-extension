@@ -1,6 +1,6 @@
 {
 	"name": "context-api-dev-tools-extension",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/remote-redux-devtools) now using Context API",
 	"main": "index.min.js",
 	"scripts": {
