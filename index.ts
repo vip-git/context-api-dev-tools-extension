@@ -5,7 +5,7 @@ let firstRender = false;
 let oldArgs: any = {};
 
 const useContextDevTools = (dispatch: Function) => {
-	if (!isInitialized) {
+	if (!isInitialized && (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
 		devTools.current = (window as any).__REDUX_DEVTOOLS_EXTENSION__.connect({
 			features: {
 				pause: true, // start/pause recording of dispatched actions
@@ -54,18 +54,22 @@ const useContextDevTools = (dispatch: Function) => {
 	};
 
 	const sendUpdatedState = (updatedState: any) => {
-		if (!firstRender) {
-			devTools.current.init(updatedState);
-			firstRender = true;
-		} else {
-			if (oldArgs.type !== 'IMPORT_STATE') {
-				devTools.current.send(oldArgs, updatedState);
+		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__){
+			if (!firstRender) {
+				devTools.current.init(updatedState);
+				firstRender = true;
+			} else {
+				if (oldArgs.type !== 'IMPORT_STATE') {
+					devTools.current.send(oldArgs, updatedState);
+				}
 			}
 		}
 	};
 
 	const disconnectDevTools = () => {
-		return typeof devTools?.current?.disconnect === 'function' && devTools?.current?.disconnect();
+		if ((window as any).__REDUX_DEVTOOLS_EXTENSION__){
+			return typeof devTools?.current?.disconnect === 'function' && devTools?.current?.disconnect();
+		}
 	}
 
 	return {
