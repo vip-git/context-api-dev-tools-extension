@@ -26,7 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
-    - run: npm run build:demo
+    - run: npm run build:demo:ci
       env:
         PUBLIC_URL: '/context-api-dev-tools-extension/'
 
