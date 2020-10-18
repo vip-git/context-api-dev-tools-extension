@@ -5,6 +5,8 @@ Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/redux-devtool
 ```
 npm install --save-dev-exact context-api-dev-tools-extension
 ```
+## [Example Demo](https://vip-git.github.io/context-api-dev-tools-extension/)
+![](./example/context-api-dev-tools-demo.gif)
 
 ## Example using `useReducer`
 #### Detailed example can be [seen here](https://github.com/vip-git/context-api-dev-tools-extension/blob/main/example/contexts/TodosContext.tsx)
