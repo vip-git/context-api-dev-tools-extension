@@ -1,4 +1,5 @@
 # Remote Context API - DevTools Extension
+![Build](https://img.shields.io/github/workflow/status/vip-git/context-api-dev-tools-extension/Build-Test-Deploy/main?style=flat) [![npm version](https://badge.fury.io/js/context-api-dev-tools-extension.svg)](https://badge.fury.io/js/context-api-dev-tools-extension)
 
 Port for [Redux Dev Tools Extension](https://github.com/zalmoxisus/redux-devtools-extension) now using Context API
 
