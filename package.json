@@ -26,7 +26,7 @@
 	"bugs": {
 		"url": "https://github.com/vip-git/context-api-dev-tools-extension/issues"
 	},
-	"homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
+	"homepage": "https://vip-git.github.io/context-api-dev-tools-extension/",
 	"dependencies": {
 		"@babel/core": "7.9.0",
 		"@svgr/webpack": "4.3.3",
