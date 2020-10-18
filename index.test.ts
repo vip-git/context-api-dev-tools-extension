@@ -57,12 +57,12 @@ describe('Dev Tools Extension (Without Extension)', () => {
     beforeAll(() => {
         const useContextDevTools = require('./index').default;
         dispatchFn = jest.fn();
-        dispatchContext = useContextDevTools(dispatchFn);
+        dispatchContext = useContextDevTools();
     });
 
     test('Should initialize devTools', () => {
         dispatchContext.sendDispatch({});
-        expect(dispatchFn).toHaveBeenCalledWith({});
+        expect(dispatchFn).not.toHaveBeenCalledWith({});
     });
 
     test('Should be able to send updated state', () => {
@@ -79,6 +79,7 @@ describe('Dev Tools Extension (Without Extension)', () => {
 
     test('Should be able to unsubscribe on tab close', () => {
         window.dispatchEvent(new Event('beforeunload'));
+        dispatchContext.disconnectDevTools();
         expect(devDisconnect).not.toHaveBeenCalled();
     });
 })
