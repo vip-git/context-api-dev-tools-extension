@@ -32,7 +32,7 @@
 		"@babel/preset-env": "7.11.5",
 		"@babel/preset-typescript": "7.10.4",
 		"babel-jest": "26.5.2",
-		"google-closure-compiler": "20201006.0.0"
+		"google-closure-compiler": "20210505.0.0"
 	},
 	"jest": {
 		"roots": [
