@@ -26,12 +26,12 @@
 	"homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
 	"devDependencies": {
 		"typescript": "4.0.3",
-		"jest": "26.5.3",
-		"@types/jest": "26.0.14",
+		"jest": "29.7.0",
+		"@types/jest": "29.5.14",
 		"@babel/core": "7.11.6",
 		"@babel/preset-env": "7.11.5",
 		"@babel/preset-typescript": "7.10.4",
-		"babel-jest": "26.5.2",
+		"babel-jest": "29.7.0",
 		"google-closure-compiler": "20201006.0.0"
 	},
 	"jest": {
