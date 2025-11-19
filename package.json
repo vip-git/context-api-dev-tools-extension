@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/vip-git/context-api-dev-tools-extension#readme",
 	"devDependencies": {
-		"typescript": "4.0.3",
+		"typescript": "4.9.5",
 		"jest": "26.5.3",
 		"@types/jest": "26.0.14",
 		"@babel/core": "7.11.6",
